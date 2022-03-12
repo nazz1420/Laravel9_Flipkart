@@ -1,0 +1,184 @@
+Laravel Application
+
+MVC (Model View Controller)
+
+C = Controller (Main Business Logic)
+	App/HTTP/Controllers
+
+View (HTML,CSS,JS,jQuery,Bootstrap)
+
+	Laravel_App
+			--->resources
+					--->views
+							1.
+							2.
+
+Models (Database)
+		App/Models/
+
+So Every Laravel View Must Contain extention ".blade.php"
+
+
+What are rountes?
+		
+		website:port/someroute
+
+So on which route which view file will be loaded is controlled by routing system.
+
+127.0.0.1:8000/anil   ----> anil.blade.php
+127.0.0.1:8000/krishnapal   ----> krishnapal.blade.php
+
+Folder Structure for routing system
+	routing system
+				routes/web.php
+
+How the routing system work in Laravel?
+
+
+How to send data to view in laravel?
+or 
+Different ways for passing data to view in Laravel?
+
+Compact is a core php function
+
+https://www.w3schools.com/php/func_array_compact.asp
+
+
+1. view()
+2. compact()
+3. with()
+4. Controller Class
+
+how to send data from controller class to view in laravel
+
+
+Data(Controller)------> View
+
+Data(Web.php/Route File)------> View
+1. view()
+2. compact()
+3. with()
+
+
+composer create-project laravel/laravel <project_name>
+ 
+cd <project_name>
+ 
+php artisan serve
+
+syntax
+git clone <repo_link> -b <branch_name>
+
+eg.
+git clone https://github.com/anildalar/Laravel9.git -b master
+
+composer install
+
+composer install
+php artisan key:generate
+php artisan migrate
+php artisan db:seed to run seeders, if any.
+php artisan serve
+
+How to create a controller file in laravel
+
+Controller and Model files are created using Laravel Commands
+
+https://laravel.com/docs/9.x/controllers
+
+syntax
+php artisan make:controller <controller_name>
+eg.
+php artisan make:controller Anil
+
+
+
+
+https://www.w3schools.com/php/php_oop_what_is.asp
+
+OOPS
+
+Object Oriented Programing Languages.
+
+class ChildClass extends ParentClass {
+
+}
+
+
+You can create application using
+1. Procedural technique (Functions)
+2. OOPs technique   (Class and Object)
+
+
+
+
+How to create model file in laravel ?
+
+php artisan make:model YourNewModel
+
+
+How to create table in laravel using migration ?
+1.Create the database manually
+2. Connnect the laravel to Database
+		create a .env and copy all content of .env.example and page in .env
+3. Change the db credentail in .env file		
+
+Note:-
+Never create the tables manually
+
+Migration File ------> Migrate --------> Table
+
+
+To create tables in laravel you need to create migration files
+
+
+php artisan make:migration create_categories_table
+
+php artisan make:migration create_products_table
+
+Where are the migration files stored in Laravel
+
+database/migrations
+
+
+https://laravel.com/docs/9.x/migrations
+
+php artisan migrate:reset
+php artisan migrate
+
+https://laravel.com/docs/7.x/migrations
+
+
+Brands
+CRUD
+
+Controller
+Models
+View
+
+How to create Controller and Models in Laravel using single Command ?
+
+Brands
+
+https://laravel.com/docs/9.x/controllers
+Specifying The Resource Model
+
+
+7 Resource methods
+	1. index  // R = Read
+	2. create // to show the form
+	3. store  // C = Create
+	4. show  
+	5. edit   // U = Update
+	6. update // U = Update
+	7. destroy  // D = Delete
+
+
+
+Resource Controller
+
+php artisan make:controller PhotoController --model=Photo --resource
+php artisan make:controller BrandController --model=Brand 
+
+y.
+PS C:\xampp2\htdocs\Laravel9> php artisan make:controller Kishan --resource
