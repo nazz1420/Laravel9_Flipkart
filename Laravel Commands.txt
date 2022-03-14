@@ -156,8 +156,11 @@ Controller
 Models
 View
 
-How to create Controller and Models in Laravel using single Command ?
+Artisan is a CLI of Laravels
 
+How to create Controller and Models in Laravel using single artisan Command ?
+
+f
 Brands
 
 https://laravel.com/docs/9.x/controllers
@@ -182,3 +185,42 @@ php artisan make:controller BrandController --model=Brand
 
 y.
 PS C:\xampp2\htdocs\Laravel9> php artisan make:controller Kishan --resource
+
+
+
+php artisan serve --port=9000
+
+
+How to create Controller,Model and Migrations in a single artisan command
+
+
+/category --> index (Listing)
+
+/category/create ---> create (Form show)
+
+
+How to create default data in laravel tables
+
+Laravel seeding
+
+
+If you want to create a table in laravel
+1. Create Migrations file
+2. Migrate
+
+Database/Migrations
+
+If you wan to seed in a table in larvel
+1. Create Seed File
+2. Seeding
+
+Database/Seeders
+
+php artisan make:seeder CategorySeeder
+
+php artisan db:seed
+
+Artisan is a Laravel CLI
+
+
+

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Anil;
+use App\Http\Controllers\Category1Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,4 +50,20 @@ Route::get('/sunil', function () {
 });
 
 
+
+/**
+ *   Routing System Tells Us on
+ *  1. Which route
+ *  2. Which Class
+ *  3. Which Methods
+ *    Will be loaded
+ * 
+ */
 Route::get('profile', [Anil::class, 'display']);
+
+
+
+// :: Scope resoulution operator
+
+Route::get('category', [Category1Controller::class, 'index']);
+Route::get('category/create', [Category1Controller::class, 'create']);
