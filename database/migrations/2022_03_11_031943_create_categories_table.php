@@ -25,7 +25,6 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('category_name');//varchar 255
             $table->longText('category_desc');// Text
-            $table->Text('category_desc2');// Text
             $table->timestamps();
         });
     }

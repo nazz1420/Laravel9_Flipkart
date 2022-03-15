@@ -219,8 +219,28 @@ Database/Seeders
 php artisan make:seeder CategorySeeder
 
 php artisan db:seed
+php artisan db:seed --class=Category2Seeder
 
 Artisan is a Laravel CLI
 
 
 
+How to access laravel application in LAN (Local Area Network) ?
+php artisan serve --help
+
+cmd
+ipconfig  ipv4
+
+php artisan serve --host=192.168.1.10 --port=9000
+http://192.168.1.10:9000/
+
+dd = dump die
+
+dd(); dd fuction is a laravel function and will not work in core php
+
+
+var_dump() is a core php function and will also work in laravel framework
+
+Data (Database)(Model)---->Controller(Data)--------> View
+
+How to send data from model to controller in laravel ?
