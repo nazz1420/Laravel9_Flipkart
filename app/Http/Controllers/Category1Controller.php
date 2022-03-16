@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+
 use Illuminate\Http\Request;
 
 class Category1Controller extends Controller
@@ -17,22 +18,12 @@ class Category1Controller extends Controller
         //
         //echo 'category index';
         //dd(Category);
-        $data = [
-            [
-                'category_name'=>'Electronics',
-                'category_desc'=>'Electronics Descritpion'
-            ],
-            [
-                'category_name'=>'Home Appliances',
-                'category_desc'=>'Home Appliances Descritpion'
-            ],
-            [
-                'category_name'=>'Faishion',
-                'category_desc'=>'Faishion Descritpion'
-            ],
-            
-        ];
-        return view('category.index',['dt'=>$data]);
+        $categories = Category::getCategory(); // latest() method is a elequent method
+        
+        //dd(gettype($categories));
+        //dd($categories);
+        //$data = $categories;
+        return view('category.index',['dt'=>$categories]);
        
     }
 

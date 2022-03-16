@@ -29,9 +29,9 @@
                 @foreach($dt as $d)
                     
                     <tr>
-                        <td scope="row">1</td>
-                        <td>{{$d['category_name']}}</td>
-                        <td>{{$d['category_desc']}}</td>
+                        <td scope="row">{{$d->id}} </td>
+                        <td>{{$d->category_name}}</td>
+                        <td>{{$d->category_desc}}</td>
                         <td>
                             <button type="button" class="btn btn-success btn-sm">View</button>
                             <button type="button" class="btn btn-primary btn-sm">Edit</button>

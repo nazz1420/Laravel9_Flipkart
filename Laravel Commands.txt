@@ -241,6 +241,14 @@ dd(); dd fuction is a laravel function and will not work in core php
 
 var_dump() is a core php function and will also work in laravel framework
 
-Data (Database)(Model)---->Controller(Data)--------> View
+Data (Database)--->(Model(Data))---->Controller--------> View
 
 How to send data from model to controller in laravel ?
+
+how to send data from model to controller in laravel
+
+
+laravel 
+	1. eloquent
+
+	2. query builder
