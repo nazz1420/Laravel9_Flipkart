@@ -12,6 +12,10 @@
   </head>
   <body>
     <div class="container">
+        <div class="text-center">
+            <a href="{{ URL::to('/category/create') }}" class="btn btn-success">Create new category</a>
+        </div>
+        
         <h1 class="text-center">Display a listing of the category.</h1>
         
         

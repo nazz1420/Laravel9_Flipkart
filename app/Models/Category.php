@@ -19,6 +19,7 @@ class Category extends Model
 
     //3. method
     public function getCategory(){
+        
         $data = DB::table('categories')->get(); // All records
             //->select('name', 'email as user_email')
             
@@ -41,4 +42,18 @@ class Category extends Model
 
         return $data;
     }
+
+    public function storeCategory($data){ //formal argument
+       // echo 'Model DD';
+       // echo $data['cat_name'];
+       // echo $data['cat_desc'];
+        //dd($data);
+
+        DB::table('categories')->insert([
+            'category_name' => $data['cat_name'],
+            'category_desc' => $data['cat_desc']
+        ]);
+    }
+
+
 }

@@ -67,3 +67,5 @@ Route::get('profile', [Anil::class, 'display']);
 
 Route::get('category', [Category1Controller::class, 'index']);
 Route::get('category/create', [Category1Controller::class, 'create']);
+
+Route::post('category/store', [Category1Controller::class, 'store'])->name("category.store");

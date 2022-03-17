@@ -48,6 +48,8 @@ class Category1Controller extends Controller
     public function store(Request $request)
     {
         //
+        //dd($request->all());
+        Category::storeCategory($request->all()); //Actual arguemtn
     }
 
     /**

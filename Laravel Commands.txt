@@ -241,7 +241,7 @@ dd(); dd fuction is a laravel function and will not work in core php
 
 var_dump() is a core php function and will also work in laravel framework
 
-Data (Database)--->(Model(Data))---->Controller--------> View
+Data (Database)--->(Model)---->Controller--------> View
 
 How to send data from model to controller in laravel ?
 
@@ -249,6 +249,38 @@ how to send data from model to controller in laravel
 
 
 laravel 
-	1. eloquent
+	1. query builder
 
-	2. query builder
+	2. eloquent
+
+
+
+So How to send data from view to controller in laravel ?
+
+
+1. With AJAX request (Without Page Reload Technique)
+
+2. Without AJAX request (Page Reload Technique)
+
+Blade Templating System (Frontend/Views)
+
+Data (Database)(Data)  <---- (Model)  <----- Controller <----- View (Form)
+
+form 
+Action = Where to send = Kaha bhejna hai
+		ResourceController  ---> store method
+
+Method = How to send   = Kese bhejna hai
+			1. POST
+			2. GET
+
+
+How to get the base url in laravel
+
+use Illuminate\Support\Facades\URL;
+
+URL::to('/')
+
+URL Generation
+
+route() ------- point to ---> web.php (Laravel Routing System)
