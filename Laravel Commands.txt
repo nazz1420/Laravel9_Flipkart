@@ -284,3 +284,5 @@ URL::to('/')
 URL Generation
 
 route() ------- point to ---> web.php (Laravel Routing System)
+
+php artisan make:model Todo -mcr
